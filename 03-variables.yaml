@@ -1,5 +1,5 @@
 - name: variables in ansible
-  hosts: local host
+  hosts: localhost
   # This is Play level variables, map
   vars:
     COURSE: DevOps with AWS
@@ -12,3 +12,4 @@
   - name: print variables
     ansible.builtin.debug:
       msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
+      # 
