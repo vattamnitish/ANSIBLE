@@ -1,14 +1,14 @@
--name: variables in ansible
-  hosts:local host
-  vars: 
-    COURSE: DEVOPS WITH AWS
-    TRAINER: shiva kumar reddy
-    DURATION: 110 hours
-  tasks:
-  -name: print hello world
-    ansible.builtin.debug:
-    msg: "Hello I am learning ansible"
-  -name: print variables
-    ansible.builtin.debug:
-    msg: "hello i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"  
+- name: variables in ansible
+   hosts:local host
+   vars: 
+     COURSE: DEVOPS WITH AWS
+     TRAINER: shiva kumar reddy
+     DURATION: 110 hours
+   tasks:
+   -name: print hello world
+     ansible.builtin.debug:
+     msg: "Hello I am learning ansible"
+   -name: print variables
+     ansible.builtin.debug:
+     msg: "hello i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"  
 
