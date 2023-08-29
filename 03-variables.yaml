@@ -1,10 +1,17 @@
 - name: variables in ansible
   hosts: localhost
   vars:
-    COURSE: Devops with aws
+    COURSE: DEVOPS WITH AWS
   tasks:
   - name: print variables
-    ansible.builtin.debug:
-      msg: "Hello, i am learning {{COURSE}}"
+      ansible.builtin.debug:
+      msg: "i am learning {{COURSE}}" 
+
+
+
+
+
+
+
 
 
