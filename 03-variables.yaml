@@ -1,15 +1,14 @@
-- name: variables in ansible
-  hosts: localhost
-  # This is Play level variables, map
-  vars:
-    COURSE: DevOps with AWS
-    TRAINER: Sivakumar
-    DURATION: 110HRS
+-name: variables in ansible
+  hosts:local host
+  vars: 
+    COURSE: DEVOPS WITH AWS
+    TRAINER: shiva kumar reddy
+    DURATION: 110 hours
   tasks:
-  - name: print hello world
+  -name: print hello world
     ansible.builtin.debug:
-      msg: "Hello, I am learning Ansible"
-  - name: print variables
+    msg: "Hello I am learning ansible"
+  -name: print variables
     ansible.builtin.debug:
-      msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
-      # 03-variables.yaml
+    msg: "hello i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"  
+
