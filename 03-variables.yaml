@@ -12,4 +12,4 @@
   - name: print variables
     ansible.builtin.debug:
       msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
-      # 
+      # 03-variables.yaml
