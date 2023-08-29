@@ -1,3 +1,9 @@
-
-
+- name: variables in ansible
+  hosts: local host
+  vars:
+    COURSE: DEVOPS
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+    msg: "Hello,i am learning {{COURSE}}"
 
